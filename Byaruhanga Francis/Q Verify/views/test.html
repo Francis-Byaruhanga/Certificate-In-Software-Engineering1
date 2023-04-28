@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/css/custom.css">
+</head>
+<body>
+    <div class="container">
+        <br>
+        <br>
+            <h1 class="card-title text-center" style="color:aliceblue">GEN Q KYC FORM</h1>
+        <br>
+        <h3>Bio Data</h3>
+        <hr class="solid gy-3">
+            <form name ="genqkycform" onsubmit="return Validate()" method="post" class="row need validation" novalidate>
+                <div class="row">
+                    <div class="form-group col-sm-6">
+                        <label for="firstname">First Name</label>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="Enter first name">
+                        <small id="firstnameerror"></small>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" class="form-control" id="dob">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="gender">Gender</label>
+                        <select class="form-control" id="gender">
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+        <h3 class="gy-3">Location</h3>
+        <hr class="solid gy-3">
+                    <div class="form-group col-sm-6">
+                        <label for="country">Country</label>
+                        <select class="form-control" id="country">
+                            <option>Uganda</option>
+                            <option>Kenya</option>
+                            <option>Rwanda</option>
+                            <option>Burundi</option>
+                            <option>DRC</option>
+                            <option>Tanzania</option>
+                            <option>South Sudan</option>
+                            <!-- Add more countries here -->
+                        </select>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="state">State</label>
+                        <input type="text" class="form-control" id="state" placeholder="Enter state">
+                        </div>
+                    <div class="form-group col-sm-6">
+                        <label for="town">Town</label>
+                        <input type="text" class="form-control" id="town" placeholder="Enter town">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="zipCode">Zip Code</label>
+                        <input type="text" class="form-control" id="zipCode" placeholder="Enter zip code">
+                    </div>
+                    <h3 class="gy-3">Contact and Address</h3>
+        <hr class="solid gy-3">
+                    <div class="form-group col-sm-6">
+                        <label for="phoneNumber1">Phone Number 1</label>
+                        <input type="tel" class="form-control" id="phoneNumber1" placeholder="Enter phone number">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="phoneNumber2">Phone Number 2</label>
+                        <input type="tel" class="form-control" id="phoneNumber2" placeholder="Enter phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    </div>
+        <br>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end gy-4">
+                        <button type="submit" class="btn btn-primary">SUBMIT</button>
+
+                    </div>   
+                </div>
+            </form>
+        </div>
+    </div>
+      
+    <script src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous'></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</body>
+<script src="../public/validate.js"></script>
+</html>

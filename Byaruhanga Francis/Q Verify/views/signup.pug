@@ -1,0 +1,89 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Document
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ' crossorigin='anonymous')
+  link(rel='stylesheet' href='../public/css/custom.css')
+  style.
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;  
+    }
+
+    h1 {
+        font-size: 36px;
+        background-color: black;
+    }
+
+    hr.solid {
+        border-top: 3px solid black;
+    }
+
+.container
+  br
+  br
+  h1.card-title.text-center(style='color:aliceblue') GEN Q KYC FORM
+  br
+  h3 Bio Data
+  hr.solid.gy-3
+  form#contact_form.well.form-horizontal(name='genqkycform' action ='/' method='post')
+    .row
+      .form-group.col-sm-6
+        label(for='firstname') First Name
+        input#validationCustom01.form-control(type='text' placeholder='Enter first name')
+        small#firstnameerror
+      .form-group.col-sm-6
+        label(for='lastname') Last Name
+        input#lastName.form-control(type='text' placeholder='Enter last name')
+      .form-group.col-sm-6
+        label(for='dob') Date of Birth
+        input#dob.form-control(type='date')
+      .form-group.col-sm-6
+        label(for='gender') Gender
+        select#gender.form-control
+          option Male
+          option Female
+          option Other
+      h3.gy-3 Location
+      hr.solid.gy-3
+      .form-group.col-sm-6
+        label(for='country') Country
+        select#country.form-control
+          option Uganda
+          option Kenya
+          option Rwanda
+          option Burundi
+          option DRC
+          option Tanzania
+          option South Sudan
+          // Add more countries here
+      .form-group.col-sm-6
+        label(for='state') State
+        input#state.form-control(type='text' placeholder='Enter state')
+      .form-group.col-sm-6
+        label(for='town') Town
+        input#town.form-control(type='text' placeholder='Enter town')
+      .form-group.col-sm-6
+        label(for='zipCode') Zip Code
+        input#zipCode.form-control(type='text' placeholder='Enter zip code')
+      h3.gy-3 Contact and Address
+      hr.solid.gy-3
+      .form-group.col-sm-6
+        label(for='phoneNumber1') Phone Number 1
+        input#phoneNumber1.form-control(type='tel' placeholder='Enter phone number')
+      .form-group.col-sm-6
+        label(for='phoneNumber2') Phone Number 2
+        input#phoneNumber2.form-control(type='tel' placeholder='Enter phone number')
+      .form-group
+        label(for='email') Email
+        input#email.form-control(type='email' placeholder='Enter email')
+      br
+      .d-grid.gap-2.d-md-flex.justify-content-md-end.gy-4
+        button.btn.btn-primary(type='submit') SUBMIT
+script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous')
+script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js' integrity='sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE' crossorigin='anonymous')
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js' integrity='sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ' crossorigin='anonymous')
+script(src='../public/validate.js')
